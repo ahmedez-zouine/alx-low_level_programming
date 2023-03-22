@@ -1,18 +1,22 @@
 #include "main.h"
 /**
-  3  * main - check the code
-  4  *
-  5  * Return: Always 0.
-  6  */
-void print_alphabet(void)
-{       
-	int i;
-	int j;
-  for( i = 0; i <= 10 ; i++)
- {
-	 for( j = 0; j <= 122; j++)
-	 {
-		_putchar(j);
-	 }
-	 putchar('\n');
- }
+ * print_alphabet_x10 - Print alphabet in lowercase 10 times
+ * Return: 0
+ */
+void print_alphabet_x10(void)
+{
+	int i = 0;
+	char c;
+
+	while (i < 10)
+	{
+		c = 'a';
+		while (c <= 'z')
+		{
+			_putchar(c);
+			c++;
+		}
+		_putchar('\n');
+		i++;
+	}
+}
