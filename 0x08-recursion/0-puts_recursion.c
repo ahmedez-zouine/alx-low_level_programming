@@ -1,12 +1,18 @@
 #include "main.h"
 /**
- * _memset - fills memory with a constant byte.
- * @s: source string
- * @b: the contant byte for filling
- * @n: lenght of buffer
- * Return: new string.
+ * _puts_recursion - function like puts();
+ * @s: input
+ * Return: Always 0 (Success)
  */
+void _puts_recursion(char *s)
+{
+	if (*s)
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
 
-void _puts_recursion(char *s){
-	puts(s);
+	else
+		_putchar('\n');
 }
+
