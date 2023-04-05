@@ -1,20 +1,20 @@
-## ` Month #0`
-> #### 0x00.C -Hello, World
+# ` Month #0`
+> ### 0x00.C -Hello, World
 ********************************************
-> #### 0x01.C -Variables, if, else, while
+> ### 0x01.C -Variables, if, else, while
 ********************************************
-> #### 0x02.C -Functions, nested loops
+> ### 0x02.C -Functions, nested loops
 ********************************************
-> #### 0x03.C -Debugging
+> ### 0x03.C -Debugging
 ********************************************
-> #### 0x04-more_functions_nested_loops
+> ### 0x04-more_functions_nested_loops
 ********************************************
-> #### 0x05-pointers_arrays_string
+> ### 0x05-pointers_arrays_string
 ********************************************
-> #### 0x06-pointers_arrays_strings
+> ### 0x06-pointers_arrays_strings
 ********************************************
-> #### 0x07-pointers_arrays_strings
+> ### 0x07-pointers_arrays_strings
 ********************************************
-## ` Month #1`
-> #### 0x08-recursion
+# ` Month #1`
+> ### 0x08-recursion
 ********************************************
