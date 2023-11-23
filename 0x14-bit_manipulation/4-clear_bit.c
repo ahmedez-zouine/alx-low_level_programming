@@ -1,6 +1,13 @@
 
 #include "main.h"
 
+/**
+ * clear_bit - returns one if condition existe
+ * @n: number one
+ * @index: number two
+ * Return: 1
+ */
+
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int m;
