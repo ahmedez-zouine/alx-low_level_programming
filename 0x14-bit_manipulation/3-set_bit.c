@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * set__bit - returns the number of bits you would
+ * set_bit - returns the number of bits you would
  * @n: number one
  * @index: number two
  * Return: number of bits

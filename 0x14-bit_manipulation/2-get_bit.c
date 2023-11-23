@@ -1,6 +1,13 @@
 
 #include "main.h"
 
+/**
+ * get_bit - returns the number of bits you would
+ * @n: number one
+ * @index: number two
+ * Return: number of bits
+ */
+
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int i;
