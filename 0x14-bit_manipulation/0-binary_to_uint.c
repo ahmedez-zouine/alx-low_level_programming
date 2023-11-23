@@ -1,12 +1,14 @@
 
 #include "main.h"
 
-/*
- * this function qui perment de convert
- * binary number  to decimal number
- * qui return number decimal 
+/**
+ * binary_to_uint - this function qui perment de
+ * conver binary number  to decimal number
  *
- * */
+ * @b: the string
+ * Return: Decimal of the binary (Sccess) otherwise 0
+ *
+ **/
 
 unsigned int binary_to_uint(const char *b)
 {
