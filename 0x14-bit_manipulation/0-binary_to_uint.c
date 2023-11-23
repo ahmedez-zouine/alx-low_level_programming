@@ -1,6 +1,15 @@
 
 #include "main.h"
 
+/*
+ * this function qui perment de convert
+ * binary number  to decimal number
+ * qui return number decimal 
+ *
+ * */
+
+
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int	result;
