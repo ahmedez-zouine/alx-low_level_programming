@@ -1,35 +1,32 @@
 #include "main.h"
-/*
- * read_textfile - this method use for recuper text 
- * from file provider in param
- * @filename name d'un file
- * @letters numbers of the letter read and printed
- * @return number of the caracter print
+
+/**
+ * read_textfile - reads a text file and prints the letters
+ * @filename: filename.
+ * @letters: numbers of letters printed.
  *
- * */
+ * Return: numbers of letters printed. It fails, returns 0.
+ */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	char buffer[letters];
-	char c;
-	int m;
-	int i;
-	i = 0;
-	m = 0;
-	if (filename == NULL)
+	ssize_t n, m;
+	char *buffer;
+
+	if (!filename)
 		return (0);
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	m = read(fd,buffer, sizeof(buffer));
-	if (m < 0)
+	buffer = malloc(sizeof(char) * letters);
+	if (!buffer)
 		return (0);
-	while (i < letters)
-	{
-		c = buffer[i];
-		_putchar(c);
-		i++;
-	}
+	n = read(fd, buffer, letters);
+	m = write(STDOUT_FILENO, buffer, n);
+
 	close(fd);
+	free(buffer);
+
+	return (m);
 }
