@@ -2,10 +2,11 @@
 #include "main.h"
 
 /**
- * binary_to_uint - this function qui perment de
+ * bnary_to_uint - this function qui perment de
  * conver binary number  to decimal number
  *
- * @b: the string
+ * 
+ * @: the string
  * Return: Decimal of the binary (Sccess) otherwise 0
  *
  **/
