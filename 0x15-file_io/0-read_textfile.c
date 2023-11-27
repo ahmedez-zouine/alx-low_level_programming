@@ -11,7 +11,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	char baffer[letters];
+	char buffer[letters];
 	char c;
 	int m;
 	int i;
@@ -27,7 +27,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	while (i < letters)
 	{
-		c = baffer[i];
+		c = buffer[i];
 		_putchar(c);
 		i++;
 	}
