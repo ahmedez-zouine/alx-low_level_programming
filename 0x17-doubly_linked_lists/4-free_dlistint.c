@@ -1,18 +1,19 @@
 #include "lists.h"
 
 /**
-  * free_dlistint - this function free list of node. 
-  * @head: start of list
-  */
+ * free_dlistint - frees a dlistint_t list
+ *
+ * @head: the head of the doubly linked list
+ */
 
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *cur = head;
+	dlistint_t *cur = NULL;
 
 	while (head)
 	{
 		cur = head;
-		free(head);
-		head = cur->next;
+		head = head->next;
+		free(cur);
 	}
 }
