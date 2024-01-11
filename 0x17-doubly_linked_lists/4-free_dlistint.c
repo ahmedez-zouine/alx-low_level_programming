@@ -2,6 +2,7 @@
 
 /**
   * free_dlistint - this function free list of node.
+  * 
   * @head: start of list
   */
 
